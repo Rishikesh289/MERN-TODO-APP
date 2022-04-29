@@ -1,0 +1,19 @@
+GET http://localhost:8000/todolist/get-todos
+###
+POST http://localhost:8000/todolist/create-todo
+Content-Type: application/json
+
+{
+	
+	"item":"this is the first task to be done!!"
+}
+###
+PUT http://localhost:8000/todolist/update-todo/6269237b83f88ba102002db2
+Content-Type: application/json
+
+{
+	"name":"updated first",
+	"description":"this is the updated first task to be done!!"
+}
+###
+DELETE http://localhost:8000/todolist/delete-todo/6269237b83f88ba102002db2
